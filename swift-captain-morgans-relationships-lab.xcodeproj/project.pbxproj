@@ -11,6 +11,9 @@
 		4C45CA8F1D3A9A7F0030A41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA8D1D3A9A7F0030A41D /* Main.storyboard */; };
 		4C45CA941D3A9A7F0030A41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA931D3A9A7F0030A41D /* Assets.xcassets */; };
 		4C45CA971D3A9A7F0030A41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45CA951D3A9A7F0030A41D /* LaunchScreen.storyboard */; };
+		BB1BDD591DD61349008716CD /* Pirates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB1BDD571DD61349008716CD /* Pirates.xcdatamodeld */; };
+		BB1BDD5B1DD614F3008716CD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BDD5A1DD614F3008716CD /* DataStore.swift */; };
+		BB1BDD5D1DD61DAE008716CD /* PirateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1BDD5C1DD61DAE008716CD /* PirateTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		4C45CA931D3A9A7F0030A41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C45CA961D3A9A7F0030A41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C45CA981D3A9A7F0030A41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1BDD581DD61349008716CD /* Pirates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pirates.xcdatamodel; sourceTree = "<group>"; };
+		BB1BDD5A1DD614F3008716CD /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		BB1BDD5C1DD61DAE008716CD /* PirateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				4C45CA891D3A9A7F0030A41D /* AppDelegate.swift */,
+				BB1BDD571DD61349008716CD /* Pirates.xcdatamodeld */,
+				BB1BDD5A1DD614F3008716CD /* DataStore.swift */,
 				4C45CA8D1D3A9A7F0030A41D /* Main.storyboard */,
+				BB1BDD5C1DD61DAE008716CD /* PirateTableViewController.swift */,
 				1B885D9D1D3FE64B0029DFFC /* Resources */,
 			);
 			path = "swift-captain-morgans-relationships-lab";
@@ -146,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1BDD591DD61349008716CD /* Pirates.xcdatamodeld in Sources */,
+				BB1BDD5B1DD614F3008716CD /* DataStore.swift in Sources */,
+				BB1BDD5D1DD61DAE008716CD /* PirateTableViewController.swift in Sources */,
 				4C45CA8A1D3A9A7F0030A41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "swift-captain-morgans-relationships-lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "swift-captain-morgans-relationships-lab/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FlatironSchool.swift-captain-morgans-relationships-lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +317,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB1BDD571DD61349008716CD /* Pirates.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB1BDD581DD61349008716CD /* Pirates.xcdatamodel */,
+			);
+			currentVersion = BB1BDD581DD61349008716CD /* Pirates.xcdatamodel */;
+			path = Pirates.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C45CA7E1D3A9A7F0030A41D /* Project object */;
 }
